@@ -28,9 +28,12 @@ El Counting Sort es un algoritmo de ordenamiento que se utiliza para ordenar una
 
 ** Versiones y notas **
 V1. 
-    En mi primer versión, cree el código para el algoritmo Counting Sort unicamente solicitando dos valores:
+    En mi primera versión, creé el código para el algoritmo Counting Sort únicamente solicitando dos valores:
         1. La cantidad del arreglo.
         2. Los valores de cada elemento del arreglo.
     Para esta versión se muestra como resultado los datos del arreglo ordenado por Counting Sort.
 
+V2. 
+    En mi segunda versión, moví la librería Files y utilicé el método archivoAint y arregloArchivo, modificando el código principal de Counting Sort para poder utilizar estos métodos. 
+    Obtuvé fallos en esta versión, aunque los datos se ordenaban de acuerdo a lo esperado, faltaron algunos detalles dentro del código.
 -->
