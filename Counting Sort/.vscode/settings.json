@@ -1,5 +1,7 @@
 {
-    "java.project.sourcePaths": ["src"],
+    "java.project.sourcePaths": [
+        "src"
+    ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
@@ -21,3 +23,5 @@
     "workbench.editor.pinnedTabSizing": "normal",
     "workbench.editor.titleScrollbarSizing": "large"
 }
+
+// Copyright © 2023 Moredia Lira Ulises
