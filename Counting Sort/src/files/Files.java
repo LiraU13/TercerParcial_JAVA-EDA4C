@@ -94,6 +94,48 @@ public class Files {
         return arreglo;
     }
 
+    // NUEVO MÉTODO que lee un archivo de texto y almacena cada línea en un arreglo solo de tipo int
+    public int[] leerEnteros(String name) {
+        File archivo;
+        FileReader reader;
+        BufferedReader bufer;
+        String linea;
+        int[] arreglo = null;
+        int t;
+        int i = 0;
+        boolean advertenciaMostrada = false;
+
+        try {
+            t = contarLineas(name);
+            arreglo = new int[t];
+            archivo = new File("C:\\Users\\lirau\\OneDrive\\Escritorio\\Universidad\\Cuatrimestre 4\\Estructura de Datos Aplicadas\\Parcial 3\\Archivos\\" + name + ".txt");
+            reader = new FileReader(archivo);
+            bufer = new BufferedReader(reader);
+            while ((linea = bufer.readLine()) != null) {
+                try {
+                    int numero = Integer.parseInt(linea);
+                    if (numero >= 0) {
+                        arreglo[i] = numero;
+                        i++;
+                    } else {
+                        if (!advertenciaMostrada) {
+                            System.out.println("ADVERTENCIA: Las líneas que no sean de tipo int, se omitiran y se mostraran con valor de 0.");
+                            advertenciaMostrada = true;
+                        }
+                    }
+                } catch (NumberFormatException e) {
+                    if (!advertenciaMostrada) {
+                        System.out.println("ADVERTENCIA: Las líneas que no sean de tipo int, se omitiran y se mostraran con valor de 0.\n");
+                        advertenciaMostrada = true;
+                    }
+                }
+            }
+            reader.close();
+        } catch (Exception e) {
+        }
+        return arreglo;
+    } 
+
     public void escribirArchivo(String name) {
         // Apuntador a la sección del disco duro donde se crea
         FileWriter archivo;

@@ -3,5 +3,21 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
-    ]
+    ],
+    "workbench.activityBar.orientation": "horizontal",
+    "workbench.colorTheme": "Anysphere",
+    "workbench.sideBar.location": "left",
+    "workbench.editor.autoLockGroups": {
+        "workbench.editor.chatSession": true,
+        "imagePreview.previewEditor": true
+    },
+    "workbench.editor.defaultBinaryEditor": "",
+    "window.autoDetectColorScheme": true,
+    "workbench.editor.scrollToSwitchTabs": true,
+    "editor.tabCompletion": "on",
+    "editor.tabFocusMode": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "workbench.editor.pinnedTabSizing": "normal",
+    "workbench.editor.titleScrollbarSizing": "large"
 }
